@@ -99,7 +99,7 @@
   },
   {
     "id": 15,
-    "translation": "утримувати",
+    "translation": "тримати",
     "infinitive": "keep",
     "pastSimple": "kept",
     "pastParticle": "kept"
@@ -246,7 +246,7 @@
   },
   {
     "id": 36,
-    "translation": "тримати",
+    "translation": "утримувати",
     "infinitive": "hold",
     "pastSimple": "held",
     "pastParticle": "held"
@@ -338,9 +338,9 @@
   {
     "id": 49,
     "translation": "прокидатися",
-    "infinitive": "wake up",
-    "pastSimple": "woke up",
-    "pastParticle": "woken up"
+    "infinitive": "wake",
+    "pastSimple": "woke",
+    "pastParticle": "woken"
   },
   {
     "id": 50,

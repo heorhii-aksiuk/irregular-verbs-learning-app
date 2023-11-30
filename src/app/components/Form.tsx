@@ -3,7 +3,7 @@
 import { Word } from "@/utils/types";
 import FormItem from "./FormItem";
 import { useState } from "react";
-import words from "@/utils/types/getShuffleData";
+import words from "@/utils/getShuffleData";
 
 function Form() {
   const [check, setCheck] = useState(false);
