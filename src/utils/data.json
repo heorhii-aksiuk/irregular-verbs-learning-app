@@ -15,7 +15,7 @@
   },
   {
     "id": 3,
-    "translation": "попадати (в ціль)",
+    "translation": "влучати",
     "infinitive": "hit",
     "pastSimple": "hit",
     "pastParticle": "hit"
@@ -369,5 +369,61 @@
     "infinitive": "write",
     "pastSimple": "wrote",
     "pastParticle": "written"
+  },
+  {
+    "id": 54,
+    "translation": "бити",
+    "infinitive": "beat",
+    "pastSimple": "beat",
+    "pastParticle": "beaten"
+  },
+  {
+    "id": 55,
+    "translation": "кусати",
+    "infinitive": "bite",
+    "pastSimple": "bit",
+    "pastParticle": "bitten"
+  },
+  {
+    "id": 56,
+    "translation": "ховати",
+    "infinitive": "hide",
+    "pastSimple": "hid",
+    "pastParticle": "hidden"
+  },
+  {
+    "id": 57,
+    "translation": "їсти",
+    "infinitive": "eat",
+    "pastSimple": "ate",
+    "pastParticle": "eaten"
+  },
+  {
+    "id": 58,
+    "translation": "падати",
+    "infinitive": "fall",
+    "pastSimple": "fell",
+    "pastParticle": "fallen"
+  },
+  {
+    "id": 59,
+    "translation": "давати",
+    "infinitive": "give",
+    "pastSimple": "gave",
+    "pastParticle": "given"
+  },
+  {
+    "id": 60,
+    "translation": "бачити",
+    "infinitive": "see",
+    "pastSimple": "saw",
+    "pastParticle": "seen"
+  },
+  {
+    "id": 61,
+    "translation": "брати",
+    "infinitive": "take",
+    "pastSimple": "took",
+    "pastParticle": "taken"
   }
 ]
