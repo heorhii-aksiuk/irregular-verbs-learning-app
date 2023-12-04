@@ -1,6 +1,7 @@
-import words from "@/utils/data.json";
-import shuffle from "./shuffle";
+import words from '@/utils/data.json';
+import shuffle from './shuffle';
 
-const data = shuffle(words);
+const wordsToLearn = words.slice(0, 73);
+const data = shuffle(wordsToLearn);
 
 export default data;

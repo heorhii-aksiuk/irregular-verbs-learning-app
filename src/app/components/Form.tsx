@@ -16,7 +16,7 @@ function Form() {
     <div className="flex justify-center">
       <form spellCheck={false}>
         <ol className="list-decimal">
-          {words.map((word: Word, index) => (
+          {words.map((word: Word) => (
             <li key={word.id}>
               {/* <span className="mr-2">{index + 1}</span> */}
               <FormItem word={word} check={check} />
