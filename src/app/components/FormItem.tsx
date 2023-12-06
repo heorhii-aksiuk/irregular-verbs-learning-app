@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { Word } from "@/utils/types";
-import Input from "./Input";
+import { Word } from '@/utils/types';
+import Input from './Input';
 
 interface Props {
   word: Word;
