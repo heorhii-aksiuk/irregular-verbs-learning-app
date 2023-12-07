@@ -40,7 +40,7 @@ export default function AppBar() {
             Irregular verbs learning app
           </Link>
         </p>
-        <nav>
+        {/* <nav>
           <ul className="flex">
             {pages.map((page) => (
               <li className="mr-6" key={page.id}>
@@ -56,7 +56,7 @@ export default function AppBar() {
               </li>
             ))}
           </ul>
-        </nav>
+        </nav> */}
       </div>
     </header>
   );
