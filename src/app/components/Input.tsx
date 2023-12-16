@@ -32,18 +32,24 @@ function Input({ correctValue, check, readOnly }: Props) {
     }
   }, [error]);
 
-  return readOnly ? (
-    <input
-      className="mr-5 mb-5 pl-2 rounded-sm text-slate-950 bg-gray-100 w-32"
-      value={correctValue}
-      disabled={readOnly}
-    />
-  ) : (
-    <input
-      onChange={(e) => setInput(e.target.value)}
-      className={`mr-5 mb-5 pl-2 rounded-sm text-slate-950 w-32 ${errorStyle}`}
-      value={input}
-    />
+  return (
+    <div className="">
+      {readOnly ? (
+        <input
+          className="mr-5 mb-5 pl-2 rounded-sm text-slate-950 bg-gray-100 w-48"
+          value={correctValue}
+          disabled
+        />
+      ) : (
+        <>
+          <input
+            onChange={(e) => setInput(e.target.value.trim())}
+            className={`mr-5 pl-2 rounded-sm text-slate-950 w-48 ${errorStyle}`}
+            value={error ? `${input} > ${correctValue}` : input}
+          />
+        </>
+      )}
+    </div>
   );
 }
 

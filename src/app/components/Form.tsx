@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { Word } from "@/utils/types";
-import FormItem from "./FormItem";
-import { useState } from "react";
-import words from "@/utils/getShuffleData";
+import { Word } from '@/utils/types';
+import FormItem from './FormItem';
+import { useState } from 'react';
+import words from '@/utils/getShuffleData';
 
 function Form() {
   const [check, setCheck] = useState(false);
@@ -16,9 +16,8 @@ function Form() {
     <div className="flex justify-center">
       <form spellCheck={false}>
         <ol className="list-decimal">
-          {words.map((word: Word, index) => (
+          {words.map((word: Word) => (
             <li key={word.id}>
-              {/* <span className="mr-2">{index + 1}</span> */}
               <FormItem word={word} check={check} />
             </li>
           ))}

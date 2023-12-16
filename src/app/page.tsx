@@ -1,12 +1,9 @@
-import Form from "./components/Form";
+import Form from './components/Form';
 
 export default function Home() {
   return (
     <main>
-      <section>
-        <h1 className="mb-5 text-center text-lg">
-          Irregular verbs learning app
-        </h1>
+      <section className="m-4">
         <Form />
         <p className="text-center">
           by Heorhii &quot;Aytivets&quot; Aksiuk - 2023
