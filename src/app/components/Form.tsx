@@ -3,7 +3,7 @@
 import { Word } from "@/utils/types";
 import FormItem from "./FormItem";
 import { useState } from "react";
-import words from "@/utils/types/getShuffleData";
+import words from "@/utils/getShuffleData";
 
 function Form() {
   const [check, setCheck] = useState(false);
@@ -13,16 +13,25 @@ function Form() {
     setCheck(true);
   };
   return (
-    <form onSubmit={onSubmit} spellCheck={false}>
-      <ul>
-        {words.map((word: Word) => (
-          <li key={word.id}>
-            <FormItem word={word} check={check} />
-          </li>
-        ))}
-      </ul>
-      <button className="bg-indigo-500">Check!</button>
-    </form>
+    <div className="flex justify-center">
+      <form spellCheck={false}>
+        <ol className="list-decimal">
+          {words.map((word: Word, index) => (
+            <li key={word.id}>
+              {/* <span className="mr-2">{index + 1}</span> */}
+              <FormItem word={word} check={check} />
+            </li>
+          ))}
+        </ol>
+        <button
+          type="button"
+          onClick={onSubmit}
+          className="bg-indigo-500 rounded-sm p-2"
+        >
+          Check!
+        </button>
+      </form>
+    </div>
   );
 }
 

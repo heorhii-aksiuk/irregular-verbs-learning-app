@@ -11,13 +11,11 @@ function Input({ correctValue, check, readOnly }: Props) {
   const [error, setError] = useState<boolean | null>(null);
   const [errorStyle, setErrorStyle] = useState("");
 
-  console.log(check);
-
   useEffect(() => {
     if (!check) {
       return;
     }
-    console.log(input);
+
     if (input === correctValue) {
       setError(false);
     } else {
@@ -36,14 +34,14 @@ function Input({ correctValue, check, readOnly }: Props) {
 
   return readOnly ? (
     <input
-      className="mr-5 mb-5 text-slate-950"
+      className="mr-5 mb-5 pl-2 rounded-sm text-slate-950 bg-gray-100 w-32"
       value={correctValue}
-      readOnly={readOnly}
+      disabled={readOnly}
     />
   ) : (
     <input
       onChange={(e) => setInput(e.target.value)}
-      className={`mr-5 mb-5 text-slate-950 ${errorStyle}`}
+      className={`mr-5 mb-5 pl-2 rounded-sm text-slate-950 w-32 ${errorStyle}`}
       value={input}
     />
   );
